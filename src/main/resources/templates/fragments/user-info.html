@@ -1,0 +1,14 @@
+<div th:fragment="userInfo(user)">
+    <div class="user-card">
+        <div class="user-avatar" th:text="${user.name != null} ? ${user.name.substring(0,1)} : 'U'">U</div>
+        <div class="user-info">
+            <div><strong th:text="${user.name}">Nombre Usuario</strong> <span style="color:#666">(<span th:text="${user.userName}">username</span>)</span></div>
+            <div>Email: <span th:text="${user.email}">email@example.com</span></div>
+            <div>Tipo:
+                <div th:if="${user.type.toString() == 'REGULAR'}">Usuario regular</div>
+                <div th:if="${user.type.toString() == 'ADMIN'}">Usuario administrador</div>
+                <div th:if="${user.type.toString() != 'REGULAR' and user.type.toString() != 'ADMIN'}">Tipo de usuario no reconocido: <span th:text="${user.type.toString()}"></span></div>
+            </div>
+        </div>
+    </div>
+</div>
