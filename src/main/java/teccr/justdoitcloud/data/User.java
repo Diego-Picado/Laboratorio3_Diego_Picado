@@ -16,7 +16,8 @@ public class User {
 
     public enum Type {
         ADMIN,
-        REGULAR
+        REGULAR,
+        TEST
     }
 
     public void addTask(Task task) {

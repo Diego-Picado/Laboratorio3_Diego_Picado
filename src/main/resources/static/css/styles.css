@@ -143,3 +143,22 @@
  }
 
 .validationError {font-size: 0.9rem; color: red; margin-top: 4px;}
+
+.tasks-report {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+}
+
+.tasks-report th,
+.tasks-report td {
+    padding: 12px;
+    border: 1px solid #dfe5ec;
+    text-align: left;
+}
+
+.tasks-report th {
+    background: #e9eef6;
+    color: #1f3a5f;
+}
